@@ -1,6 +1,58 @@
 @import url('reset.css');
 @import url('font.css');
 
-p{
+*{
     font-family: 'Cy Grotrsk';
+}
+p{
+    display: flex;
+    font-size: 124px;
+    color: #FF0000;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    animation: running_text 10s linear infinite;
+}
+@keyframes running_text{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-78%, 0);
+    }
+}
+.firstScreen{
+    display: flex;
+}
+.fullHeight{
+    height: 100vh;
+}
+.halfTheWidth{
+    width: 50%;
+}
+.background1screen{
+    display: flex;
+    z-index: 0;
+    overflow: hidden;
+}
+.backgroundFirstScreen{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+.black{
+    background-color: black;
+}
+.ryu {
+  width: 435px;
+  height: 267px;
+  margin: -5% auto 0 auto; /* positioning tweak */
+  background:  url('http://bennet.org/images/codepen/ryu-sprite-demo.png') no-repeat 0 0%;
+  animation: sprite 3.5s steps(45) infinite;
+}
+
+@keyframes sprite {
+  from { background-position: 0 0%; }
+  to { background-position: 0 100%; }
 }
