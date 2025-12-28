@@ -217,7 +217,7 @@ section{
     display: flex;
     flex-direction: row;
     width: 50%;
-    /* height: fit-content;s */
+    /* height: fit-content; */
 }
 .third-screen-second-block{
     width: 50%;
