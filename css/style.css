@@ -23,14 +23,56 @@ section{
     width: 100%;
 }
 .first-screen-first-block{
-    background-color: purple;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 50%;
+    position: relative;
+}
+.background7{
+    max-width: 500%;
+    max-height: 500%; 
+    object-fit: contain;
+    transform-origin: center;
+    animation: rotateFon7 6s linear infinite;
+    position: absolute;
+    z-index: 1;
+}
+@keyframes rotateFon7 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .first-screen-second-block{
-    background-color: rgb(128, 94, 0);
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 50%;
+    position: relative;
+}
+.background8{
+    max-width: 500%;
+    max-height: 500%; 
+    object-fit: contain;
+    transform-origin: center;
+    animation: rotateFon8 6s linear infinite;
+    position: absolute;
+    z-index: 1;
+}
+@keyframes rotateFon8 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 
