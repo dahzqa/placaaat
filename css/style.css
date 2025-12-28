@@ -1,58 +1,323 @@
 @import url('reset.css');
 @import url('font.css');
 
+
 *{
     font-family: 'Cy Grotrsk';
+    box-sizing: border-box;
 }
-p{
+body{
     display: flex;
-    font-size: 124px;
-    color: #FF0000;
-    overflow: hidden;
-    white-space: nowrap;
-    position: absolute;
-    animation: running_text 10s linear infinite;
+    flex-direction: column;
 }
-@keyframes running_text{
-    0%{
-        transform: translate(0, 0);
-    }
-    100%{
-        transform: translate(-78%, 0);
-    }
+section{
+    width: 100vw;
 }
-.firstScreen{
+
+
+
+.first-screen{
     display: flex;
-}
-.fullHeight{
+    flex-direction: row;
     height: 100vh;
+    width: 100%;
 }
-.halfTheWidth{
+.first-screen-first-block{
+    background-color: purple;
+    height: 100vh;
     width: 50%;
 }
-.background1screen{
+.first-screen-second-block{
+    background-color: rgb(128, 94, 0);
+    height: 100vh;
+    width: 50%;
+}
+
+
+
+.second-screen{
     display: flex;
-    z-index: 0;
+    justify-content: flex-start;
+    background: #FFDDDD;
     overflow: hidden;
 }
-.backgroundFirstScreen{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
+.second-screen-text{
+    font-size: 10vw;
+    color: #FF0000;
+    white-space: nowrap;
+    padding: 0 1rem;
+    animation: moveText 6s linear infinite;
 }
-.black{
-    background-color: black;
+@keyframes moveText {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
-.ryu {
-  width: 435px;
-  height: 267px;
-  margin: -5% auto 0 auto; /* positioning tweak */
-  background:  url('http://bennet.org/images/codepen/ryu-sprite-demo.png') no-repeat 0 0%;
-  animation: sprite 3.5s steps(45) infinite;
+
+
+
+.third-screen{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 100%;
+}
+.third-screen-first-block{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.third-screen-first-block-first-subblock{
+    display: flex;
+    overflow: hidden;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+.ryu1 {
+    width: min(100vw, 450px);
+    height: calc(min(100vw, 450px) * 360 / 720);
+    
+    background: url('../assets/images/sprite3.svg') no-repeat 0 0%;
+    background-size: cover;
+    background-position: center;
+    animation: sprite 1s steps(13) infinite;
 }
 
 @keyframes sprite {
   from { background-position: 0 0%; }
   to { background-position: 0 100%; }
+}
+.third-screen-first-block-second-subblock{
+    width: 100%;
+    height: 60%;
+    background-color: greenyellow;
+}
+.third-screen-secondAndThird-blocks{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 100%;
+}
+.third-screen-second-block{
+    background-color: rgba(16, 16, 160, 0.809);
+    width: 50%;
+    height: 100%;
+}
+.third-screen-third-block{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.third-screen-third-block-first-subblock{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(225, 53, 133);
+}
+.third-screen-third-block-second-subblock{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(240, 130, 20);
+}
+
+
+
+.fourth-screen{
+    display: flex;
+    justify-content: flex-start;
+    background: #FF0000;
+    overflow: hidden;
+}
+.fourth-screen-text{
+    font-size: 10vw;
+    color: #FFDDDD;
+    white-space: nowrap;
+    padding: 0 1rem;
+    animation: moveText 6s linear infinite;
+}
+@keyframes moveText {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.fifth-screen{
+    background-color: palegreen;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.sixth-screen{
+    display: flex;
+    background: 000000;
+    background: linear-gradient(6deg,rgba(0, 0, 0, 1) 23%, rgba(255, 0, 0, 1) 100%);
+    height: 100vh;
+}
+.star1{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    animation: rotate3d 3s linear infinite;
+    transform-style: preserve-3d; 
+}
+
+/* Вращение вокруг оси Y (как будто смотрим сбоку) */
+@keyframes rotate3d {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+.star2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    animation: rotate3d 3s linear infinite;
+    transform-style: preserve-3d; 
+}
+
+/* Вращение вокруг оси Y (как будто смотрим сбоку) */
+@keyframes rotate3d {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+.star3{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    animation: rotate3d 3s linear infinite;
+    transform-style: preserve-3d; 
+}
+
+/* Вращение вокруг оси Y (как будто смотрим сбоку) */
+@keyframes rotate3d {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+
+
+.seventh-screen{
+    display: flex;
+    overflow: hidden;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45.5vh;
+}
+.ryu {
+    width: 41%;
+    height: 100%;
+    background: url('../assets/images/sprite2.svg') no-repeat 0 0%;
+    background-size: cover;
+    background-position: center;
+    animation: sprite 6s steps(91) infinite;
+}
+
+@keyframes sprite {
+  from { background-position: 0 0%; }
+  to { background-position: 0 100%; }
+}
+
+
+
+.eighth-screen{
+    display: flex;
+    justify-content: flex-start;
+    background: #000;
+    overflow: hidden;
+}
+.eighth-screen-text{
+    font-size: 10vw;
+    color: #FF0000;
+    white-space: nowrap;
+    padding: 0 1rem;
+    animation: moveText 6s linear infinite;
+}
+@keyframes moveText {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+.decstop-only{
+    display: inherit;
+}
+
+@media (max-width: 1040px) {
+    .seventh-screen {
+        height: auto;
+    }
+    
+    .ryu {
+        width: min(100vw, 450px);
+        height: calc(min(100vw, 450px) * 820 / 1180);
+        max-width: 100%;
+        max-height: 70vh;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .third-screen{
+        flex-wrap: wrap;
+        height: 200vh;
+    }
+    .third-screen-first-block {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .third-screen-secondAndThird-blocks {
+        width: 100%;
+        height: 100vh;
+    }
+
+}
+@media (max-width: 512px) {
+    .first-screen-second-block{
+        display: none;
+    }
+    .first-screen-first-block{
+        width: 100%;
+    }
+    .decstop-only{
+        display: none;
+    }
+    .third-screen-secondAndThird-blocks{
+        flex-wrap: wrap;
+        height: 200vh;
+    }
+    .third-screen-third-block{
+        width: 100%;
+        height: 100vh;
+    }
+}
+@media (max-width: 480px) {
+    .ryu {
+        width: 100vw;
+        height: calc(100vw * 820 / 1180);
+    }
 }
