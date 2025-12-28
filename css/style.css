@@ -217,7 +217,7 @@ section{
     display: flex;
     flex-direction: row;
     width: 50%;
-    height: auto;
+    height: 100%;
 }
 .third-screen-second-block{
     width: 50%;
@@ -681,7 +681,7 @@ section{
     }
     .third-screen-secondAndThird-blocks{
         flex-wrap: wrap;
-        height: 200vh;
+        height: fit-content;
     }
     .third-screen-third-block{
         width: 100%;
