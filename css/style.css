@@ -32,8 +32,6 @@ section{
     position: relative;
 }
 .background7{
-    max-width: 500%;
-    max-height: 500%; 
     object-fit: contain;
     transform-origin: center;
     animation: rotateFon7 6s linear infinite;
@@ -48,6 +46,36 @@ section{
         transform: rotate(360deg);
     }
 }
+
+
+
+.eyeGod1{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    max-width: 608px;
+    max-height: 311px;
+}
+.sleepEyeGod {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-width: 608px;
+    max-height: 311px;
+    animation: switch 2s infinite;
+    z-index: 6;
+}
+.sleepEyeGod { animation-delay: 750ms; }
+
+@keyframes switch {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+
+
+
 .first-screen-second-block{
     display: flex;
     overflow: hidden;
@@ -56,10 +84,9 @@ section{
     height: 100vh;
     width: 50%;
     position: relative;
+    background-color: #FF94C8;
 }
 .background8{
-    max-width: 500%;
-    max-height: 500%; 
     object-fit: contain;
     transform-origin: center;
     animation: rotateFon8 6s linear infinite;
@@ -74,7 +101,14 @@ section{
         transform: rotate(-360deg);
     }
 }
-
+.eyeGod2{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    max-width: 608px;
+    max-height: 311px;
+}
 
 
 .second-screen{

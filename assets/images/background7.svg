@@ -1,11 +1,11 @@
-<svg width="1348" height="1684" viewBox="0 0 1348 1684" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="2096" height="2620" viewBox="0 0 2096 2620" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_701_3831)">
-<rect width="1347.2" height="1684" transform="matrix(-1 0 0 1 1347.2 0)" fill="#FF0000"/>
-<path d="M673.593 1814.97C136.233 1814.97 -299.384 1379.36 -299.384 841.997C-299.384 304.636 136.233 -130.98 673.593 -130.98C1210.95 -130.98 1646.57 304.636 1646.57 841.997C1646.57 1379.36 1210.95 1814.97 673.593 1814.97Z" stroke="#FF94C8" stroke-width="1871.11" stroke-miterlimit="10" stroke-dasharray="137.49 139.32"/>
+<rect width="2096" height="2620" transform="matrix(-1 0 0 1 2096 0)" fill="#FF0000"/>
+<path d="M1047.99 2823.77C211.952 2823.77 -465.789 2146.03 -465.789 1309.99C-465.789 473.959 211.952 -203.781 1047.99 -203.781C1884.02 -203.781 2561.76 473.959 2561.76 1309.99C2561.76 2146.03 1884.02 2823.77 1047.99 2823.77Z" stroke="#FF94C8" stroke-width="2911.11" stroke-miterlimit="10" stroke-dasharray="213.91 216.76"/>
 </g>
 <defs>
 <clipPath id="clip0_701_3831">
-<rect width="1347.2" height="1684" fill="white" transform="matrix(-1 0 0 1 1347.2 0)"/>
+<rect width="2096" height="2620" fill="white" transform="matrix(-1 0 0 1 2096 0)"/>
 </clipPath>
 </defs>
 </svg>
