@@ -144,10 +144,27 @@ section{
     height: 100%;
 }
 .third-screen-second-block{
-    background-color: rgba(16, 16, 160, 0.809);
     width: 50%;
     height: 100%;
+    background-color: #000;
+    background: url('../assets/images/background5.svg');
+    background-size: cover;
+    background-position: center;
+    animation: moveUpDown 3s ease-in-out infinite alternate;
+    overflow: hidden;
 }
+
+@keyframes moveUpDown {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
+}
+
+
+
 .third-screen-third-block{
     display: flex;
     flex-direction: column;
@@ -155,14 +172,61 @@ section{
     height: 100%;
 }
 .third-screen-third-block-first-subblock{
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 50%;
     background-color: rgb(225, 53, 133);
+    overflow: hidden;
+}
+.w1{
+    display: flex;
+    flex-direction: column;
+    color: #FFDDDD;
+    background-color: #FF0000;
+    width: 20%;
+    font-size: 3.75vw;
+    line-height: 85%;
+}
+.w1 p {
+    display: inline-block;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-75px);
+    }
+}
+.w2{
+    display: flex;
+    flex-direction: column;
+    color: #FF0000;
+    background-color: #FF94C8;
+    width: 20%;
+    font-size: 3.75vw;
+    line-height: 85%;
+}
+.w2 p {
+    display: inline-block;
+    animation: bounce1 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce1 {
+    0%, 100% {
+        transform: translateY(-75px);
+    }
+    50% {
+        transform: translateY(0);
+    }
 }
 .third-screen-third-block-second-subblock{
+    background-color: aqua;
     width: 100%;
     height: 50%;
-    background-color: rgb(240, 130, 20);
 }
 
 
@@ -506,6 +570,12 @@ section{
         width: 100%;
         height: 100vh;
     }
+    .w1{
+        font-size: 7.5vw;
+    }
+    .w2{
+        font-size: 7.5vw;
+    }
 }
 @media (max-width: 512px) {
     .first-screen-second-block{
@@ -524,6 +594,12 @@ section{
     .third-screen-third-block{
         width: 100%;
         height: 100vh;
+    }
+    .w1{
+        font-size: 15vw;
+    }
+    .w2{
+        font-size: 15vw;
     }
     .stars{
         display: none;
