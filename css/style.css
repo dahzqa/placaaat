@@ -38,11 +38,11 @@ section{
     position: absolute;
     z-index: 1;
 }
-@keyframes rotateFon7 {
-    0% {
+@keyframes rotateFon7{
+    0%{
         transform: rotate(0deg);
     }
-    100% {
+    100%{
         transform: rotate(360deg);
     }
 }
@@ -57,7 +57,7 @@ section{
     max-width: 608px;
     max-height: 311px;
 }
-.sleepEyeGod {
+.sleepEyeGod{
     position: absolute;
     width: 100%;
     height: auto;
@@ -68,9 +68,9 @@ section{
 }
 .sleepEyeGod{ animation-delay: 750ms; }
 
-@keyframes switch {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+@keyframes switch{
+    0%, 50%{ opacity: 1; }
+    51%, 100%{ opacity: 0; }
 }
 
 
@@ -93,11 +93,11 @@ section{
     position: absolute;
     z-index: 1;
 }
-@keyframes rotateFon8 {
-    0% {
+@keyframes rotateFon8{
+    0%{
         transform: rotate(0deg);
     }
-    100% {
+    100%{
         transform: rotate(-360deg);
     }
 }
@@ -124,7 +124,7 @@ section{
     padding: 0 1rem;
     animation: moveText 6s linear infinite;
 }
-@keyframes moveText {
+@keyframes moveText{
     0%{
         transform: translateX(0);
     }
@@ -170,17 +170,17 @@ section{
     z-index: 1;
 }
 
-@keyframes rotateFon {
-    0% {
+@keyframes rotateFon{
+    0%{
         transform: rotate(0deg);
     }
-    100% {
+    100%{
         transform: rotate(360deg);
     }
 }
 
 
-.ryu1 {
+.ryu1{
     width: min(100vw, 450px);
     height: calc(min(100vw, 450px)*360/720);
     background: url('../assets/images/sprite3.svg') no-repeat 0 0%;
@@ -192,9 +192,9 @@ section{
     z-index: 2;
 }
 
-@keyframes sprite {
-  from { background-position: 0 0%; }
-  to { background-position: 0 100%; }
+@keyframes sprite{
+  from{ background-position: 0 0%; }
+  to{ background-position: 0 100%; }
 }
 .third-screen-first-block-second-subblock{
     width: 100%;
@@ -205,11 +205,11 @@ section{
     transform-style: preserve-3d;
 }
 
-@keyframes rotatee {
-    0% {
+@keyframes rotatee{
+    0%{
         transform: rotateX(0deg);
     }
-    100% {
+    100%{
         transform: rotateX(360deg);
     }
 }
@@ -230,11 +230,11 @@ section{
     overflow: hidden;
 }
 
-@keyframes moveUpDown {
-    0% {
+@keyframes moveUpDown{
+    0%{
         background-position: center top;
     }
-    100% {
+    100%{
         background-position: center bottom;
     }
 }
@@ -265,16 +265,16 @@ section{
     line-height: 85%;
     align-items: center;
 }
-.w1 p {
+.w1 p{
     display: inline-block;
     animation: bounce 1.5s ease-in-out infinite;
 }
 
-@keyframes bounce {
-    0%, 100% {
+@keyframes bounce{
+    0%, 100%{
         transform: translateY(0);
     }
-    50% {
+    50%{
         transform: translateY(-75px);
     }
 }
@@ -288,21 +288,20 @@ section{
     line-height: 85%;
     align-items: center;
 }
-.w2 p {
+.w2 p{
     display: inline-block;
     animation: bounce1 1.5s ease-in-out infinite;
 }
 
-@keyframes bounce1 {
-    0%, 100% {
+@keyframes bounce1{
+    0%, 100%{
         transform: translateY(-75px);
     }
-    50% {
+    50%{
         transform: translateY(0);
     }
 }
 .third-screen-third-block-second-subblock{
-    background-color: aqua;
     width: 100%;
     height: 50%;
     background: url('../assets/images/background6.svg');
@@ -312,11 +311,11 @@ section{
     overflow: hidden;
 }
 
-@keyframes moveUpDown2 {
-    0% {
+@keyframes moveUpDown2{
+    0%{
         background-position: center top;
     }
-    100% {
+    100%{
         background-position: center bottom;
     }
 }
@@ -336,7 +335,7 @@ section{
     padding: 0 1rem;
     animation: moveText 6s linear infinite;
 }
-@keyframes moveText {
+@keyframes moveText{
     0%{
         transform: translateX(0);
     }
@@ -371,11 +370,11 @@ section{
     animation: blinkk 500ms steps(2, start) infinite;
 }
 
-@keyframes blinkk {
-    0%, 50% {
+@keyframes blinkk{
+    0%, 50%{
         color: #FFDDDD;
     }
-    51%, 100% {
+    51%, 100%{
         color: #FF0000;
     }
 }
@@ -385,11 +384,11 @@ section{
     animation: blink 500ms steps(2, start) infinite;
 }
 
-@keyframes blink {
-    0%, 50% {
+@keyframes blink{
+    0%, 50%{
         color: #FF0000;
     }
-    51%, 100% {
+    51%, 100%{
         color: #FFDDDD;
     }
 }
@@ -428,11 +427,11 @@ section{
     animation: rot 3s linear infinite;
 }
 
-@keyframes rot {
-    0% {
+@keyframes rot{
+    0%{
         transform: translate(-50%, -50%) rotate(0deg) translateY(28%) rotate(0deg);
     }
-    100% {
+    100%{
         transform: translate(-50%, -50%) rotate(360deg) translateY(28%) rotate(-360deg);
     } 
 }
@@ -441,11 +440,11 @@ section{
     animation: rot1 3s linear infinite;
 }
 
-@keyframes rot1 {
-    0% {
+@keyframes rot1{
+    0%{
         transform: translate(-50%, -50%) rotate(270deg) translateY(28%) rotate(-270deg);
     }
-    100% {
+    100%{
         transform: translate(-50%, -50%) rotate(630deg) translateY(28%) rotate(-630deg);
     } 
 }
@@ -454,11 +453,11 @@ section{
     animation: rot2 3s linear infinite;
 }
 
-@keyframes rot2 {
-    0% {
+@keyframes rot2{
+    0%{
         transform: translate(-50%, -50%) rotate(90deg) translateY(28%) rotate(-90deg);
     }
-    100% {
+    100%{
         transform: translate(-50%, -50%) rotate(450deg) translateY(28%) rotate(-450deg);
     } 
 }
@@ -490,11 +489,11 @@ section{
     animation: animate 5s linear infinite;
 }
 
-@keyframes animate {
-  0% {
+@keyframes animate{
+  0%{
     transform: perspective(100vw) rotateX(0deg);
   }
-  0% {
+  0%{
     transform: perspective(100vw) rotateX(359deg);
   }
 }
@@ -508,16 +507,16 @@ section{
     border-radius: 2vw;
 }
 
-.stars div img:nth-child(1) {
+.stars div img:nth-child(1){
   transform: rotateX(0deg);
 }
-.stars div img:nth-child(2) {
+.stars div img:nth-child(2){
   transform: rotateX(45deg);
 }
-.stars div img:nth-child(3) {
+.stars div img:nth-child(3){
   transform: rotateX(-45deg);
 }
-.stars div img:nth-child(4) {
+.stars div img:nth-child(4){
   transform: rotateX(90deg);
 }
 
@@ -530,7 +529,7 @@ section{
     transform: perspective(100vw) rotateY(-45deg);
     transform-style: preserve-3d;
 }
-.stars1 div {
+.stars1 div{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -540,15 +539,15 @@ section{
     animation: animate1 5s linear infinite;
 }
 
-@keyframes animate1 {
-  0% {
+@keyframes animate1{
+  0%{
     transform: perspective(100vw) rotateX(0deg);
   }
-  0% {
+  0%{
     transform: perspective(100vw) rotateX(359deg);
   }
 }
-.stars1 div img {
+.stars1 div img{
     position: absolute;
     top: 0;
     left: 0;
@@ -558,16 +557,16 @@ section{
     border-radius: 2vw;
 }
 
-.stars1 div img:nth-child(1) {
+.stars1 div img:nth-child(1){
   transform: rotateX(0deg);
 }
-.stars1 div img:nth-child(2) {
+.stars1 div img:nth-child(2){
   transform: rotateX(45deg);
 }
-.stars1 div img:nth-child(3) {
+.stars1 div img:nth-child(3){
   transform: rotateX(-45deg);
 }
-.stars1 div img:nth-child(4) {
+.stars1 div img:nth-child(4){
   transform: rotateX(90deg);
 }
 
@@ -587,7 +586,7 @@ section{
     width: 100%;
     height: 45.5vh;
 }
-.ryu {
+.ryu{
     width: 41%;
     height: 100%;
     background: url('../assets/images/sprite2.svg') no-repeat 0 0%;
@@ -596,9 +595,9 @@ section{
     animation: sprite 6s steps(91) infinite;
 }
 
-@keyframes sprite {
-  from { background-position: 0 0%; }
-  to { background-position: 0 100%; }
+@keyframes sprite{
+  from{ background-position: 0 0%; }
+  to{ background-position: 0 100%; }
 }
 
 
@@ -616,7 +615,7 @@ section{
     padding: 0 1rem;
     animation: moveText 6s linear infinite;
 }
-@keyframes moveText {
+@keyframes moveText{
     0%{
         transform: translateX(0);
     }
@@ -634,12 +633,12 @@ section{
 }
 
 
-@media (max-width: 1040px) {
+@media (max-width: 1040px){
     .seventh-screen{
         height: auto;
     }
     
-    .ryu {
+    .ryu{
         width: min(100vw, 450px);
         height: calc(min(100vw, 450px) * 820 / 1180);
         max-width: 100%;
@@ -648,17 +647,17 @@ section{
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     .third-screen{
         flex-wrap: wrap;
         height: 200vh;
     }
-    .third-screen-first-block {
+    .third-screen-first-block{
         width: 100%;
         height: 100vh;
     }
     
-    .third-screen-secondAndThird-blocks {
+    .third-screen-secondAndThird-blocks{
         width: 100%;
         height: 100vh;
     }
@@ -669,7 +668,7 @@ section{
         font-size: 7.5vw;
     }
 }
-@media (max-width: 512px) {
+@media (max-width: 512px){
     .first-screen-second-block{
         display: none;
     }
@@ -700,8 +699,8 @@ section{
         left: 40vw;
     }
 }
-@media (max-width: 480px) {
-    .ryu {
+@media (max-width: 480px){
+    .ryu{
         width: 100vw;
         height: calc(100vw * 820 / 1180);
     }
